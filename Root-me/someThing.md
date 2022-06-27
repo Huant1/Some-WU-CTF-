@@ -1,9 +1,8 @@
 # Rootme 
 
+## ***Web - Server***
 
-[Web - Server](#Web-Server)
+### HTTP - IP restriction bypass
 
-abcxyz 
 
-[Web - Client](#Web-Client)
-
+## ***Web - Client***
