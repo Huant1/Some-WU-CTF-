@@ -1,6 +1,6 @@
 # Web - Server
 
-## [PHP - register globals](https://www.root-me.org/en/Challenges/Web-Server/PHP-register-globals)
+### [PHP - register globals](https://www.root-me.org/en/Challenges/Web-Server/PHP-register-globals)
 
 Sau khi vào sẽ thấy yêu cầu nhập mật khẩu, thử nhập vài giá trị, sau khi submit thì vẫn không chuyển tới trang khác mà vẫn ở trang cũ.
 
@@ -28,3 +28,18 @@ Truy cập vào `https://challenge01.root-me.org/web-serveur/ch17/index.php.bak`
 > payload: `http://challenge01.root-me.org/web-serveur/ch17/?_SESSION[logged]=1`
 
 Và thế là ta có flag ^^!
+
+
+### [HTTP - IP restriction bypass](https://www.root-me.org/en/Challenges/Web-Server/HTTP-IP-restriction-bypass)
+
+Sau khi mở challenge ta được chuyển hướng đến 1 website.
+![image7](./images/7.PNG)
+
+Ở đây, ta cần dùng ip của mạng LAN để có thể lấy flag.
+
+Note: hệ thống mạng LAN và có dạng 192.168.1.1 đến 192.168.1.255
+
+Ở đây mình dùng Burpsuit, và thêm vào Request headers `X-Forwarded-For: 192.168.1.2`
+
+Và giờ thì mình có flag.
+![image8](./images/8.PNG)
